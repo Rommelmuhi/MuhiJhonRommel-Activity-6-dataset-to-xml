@@ -1,85 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE google-classroom [
-	<!ELEMENT google-classroom (classes, enrolled)>
-	<!ELEMENT classes (subject, instructor, to-do, email-add)
+	<!ELEMENT google-classroom (classes, enrolled, instructor-details)>
+	<!ELEMENT classes (subject, instructor, to-do)>
+	<!ELEMENT instructor-details (instructor, email-add, institution, address)>
+	<!ELEMENT address (barangay, town, city, zip)>
 
 	<!ELEMENT subject (#PCDATA)>
 	<!ELEMENT instructor (#PCDATA)>
 	<!ELEMENT to-do (#PCDATA)>
 	<!ELEMENT email-add (#PCDATA)>
+	<!ELEMENT institution (#PCDATA)>
+	<!ELEMENT address (#PCDATA)>
+	<!ELEMENT barangay (#PCDATA)>
+	<!ELEMENT town (#PCDATA)>
+	<!ELEMENT city (#PCDATA)>
+	<!ELEMENT zip (#PCDATA)>
 
 	<!ATTLIST subject section CDATA #REQUIRED>
 	<!ATTLIST instructor gender CDATA #REQUIRED>
 	<!ATTLIST subject semester CDATA #REQUIRED>
+	<!ATTLIST classes class-id CDATA #REQUIRED>
 
 ]>
-//note for sir... all emails are made up, di ko alam po eh haha
+
 <google-classroom>
-	<classes>
+	<classes class-id="C_001">
 		<subject section="BSIT-2B"> Team Sports </subject>
-		<instructor gender="male"> Mr. Tuliao </instructor>
-		<email-add> mr_tuliao@gmail.com </email-add> 
+		<instructor> Mr. Tuliao </instructor>
 		<to-do> Basics of Volleyball - video performance </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_002">
 		<subject section="BSIT-2B"> Quantitative Math </subject>
-		<instructor gender="female"> Ms. Aguiflor </instructor>
-		<email-add> aguiflor09@gmail.com </email-add>
+		<instructor> Ms. Aguiflor </instructor>
 		<to-do> Exercise 3.1.1 </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_003">
 		<subject section="BSIT-2B"> Computer Graphics Programming </subject>
-		<instructor gender="male"> Mr. Salvacion </instructor>
-		<email-add> harris_s@gmail.com </email-add>
+		<instructor> Mr. Salvacion </instructor>
 		<to-do> Simple 2D Game Development in C# </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_004">
 		<subject section="BSIT-2B"> Application Development </subject>
-		<instructor gender="male"> Mr. Villaruel </instructor>
-		<email-add> vill_05@gmail.com </email-add>
+		<instructor> Mr. Villaruel </instructor>
 		<to-do> Worksheet 4-2 </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_005">
 		<subject section="BSIT-2B"> Integrative Programming </subject>
-		<instructor gender="male"> Mr. Perez </instructor>
-		<email-add> ryan_clifford@gmail.com </email-add>
+		<instructor> Mr. Perez </instructor>
 		<to-do> Dataset to xml </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_006">
 		<subject section="BSIT-2B"> Data Structure Algorithm </subject>
-		<instructor gender="male"> Mr. Imperio </instructor>
-		<email-add> imperio_908@gmail.com </email-add>
+		<instructor> Mr. Imperio </instructor>
 		<to-do> Graph-Quiz </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_007">
 		<subject section="BSIT-2B"> Social and Professional Issues </subject>
-		<instructor gender="male"> Mr. Rebistual </instructor>
-		<email-add> c_reb@gmail.com </email-add>
+		<instructor> Mr. Rebistual </instructor>
 		<to-do> Reporting </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_008">
 		<subject section="BSIT-2B"> Discrete Mathematics </subject>
-		<instructor gender="male"> Mr. Moldon </instructor>
-		<email-add> moldon211@gmail.com </email-add>
+		<instructor> Mr. Moldon </instructor>
 		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_009">
 		<subject section="BSIT-2B"> Life and Works of Rizal </subject>
-		<instructor gender="male"> Mr. Quindoza </instructor>
-		<email-add> quin_888@gmail.com </email-add>
+		<instructor> Mr. Quindoza </instructor>
 		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_010">
 		<subject section="BSIT-2B"> Networking </subject>
-		<instructor gender="male"> Mr. Dimagiba </instructor>
-		<email-add> mr_unbreakable@gmail.com </email-add>
+		<instructor> Mr. Dimagiba </instructor>
 		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
-	<classes>
+	<classes class-id="C_011">
 		<subject section="BSIT-2B"> Computer Programming </subject>
-		<instructor gender="male"> Mr. Malinao </instructor>
-		<email-add> clear_ronjie@gmail.com </email-add>
+		<instructor> Mr. Malinao </instructor>
 		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
 
@@ -96,5 +94,127 @@
 		<subject semester="1st"> Networking </subject>
 		<subject semester="1st"> Computer Programming </subject>
 	</enrolled>
+
+	<instructor-details id="I_001">
+		<instructor gender="male"> Mr. Tuliao </instructor>
+		<email-add> mr_tuliao@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Laylay </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_002">
+		<instructor gender="female"> Ms. Aguiflor </instructor>
+		<email-add> aguiflor09@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Laylay </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_003">
+		<instructor gender="male"> Mr. Salvacion </instructor>
+		<email-add> harris_s@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Pinggan </barangay>
+			<town> Gasan </town>
+			<city> Marinduque </city>
+			<zip> 4903 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_004">
+		<instructor gender="male"> Mr. Villaruel </instructor>
+		<email-add> vill_05@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Isok </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_005">
+		<instructor gender="male"> Mr. Perez </instructor>
+		<email-add> ryan_clifford@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Market Site </barangay>
+			<town> Mogpog </town>
+			<city> Marinduque </city>
+			<zip> 4901 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_006">
+		<instructor gender="male"> Mr. Imperio </instructor>
+		<email-add> imperio_908@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Puyog </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_007">
+		<instructor gender="male"> Mr. Rebistual </instructor>
+		<email-add> c_reb@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Tabi </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_008">
+		<instructor gender="male"> Mr. Moldon </instructor>
+		<email-add> moldon211@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Bagumbayan </barangay>
+			<town> StaCruz </town>
+			<city> Marinduque </city>
+			<zip> 4902 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_009">
+		<instructor gender="male"> Mr. Quindoza </instructor>
+		<email-add> quin_888@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Murallon </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_010">
+		<instructor gender="male"> Mr. Dimagiba </instructor>
+		<email-add> mr_unbreakable@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Tigwi </barangay>
+			<town> Gasan </town>
+			<city> Marinduque </city>
+			<zip> 4903 </zip>
+		</address>
+	</instructor-details>
+	<instructor-details id="I_011">
+		<instructor gender="male"> Mr. Malinao </instructor>
+		<email-add> clear_ronjie@gmail.com </email-add>
+		<institution> Marinduque State College </institution>
+		<address> 
+			<barangay> Tanza </barangay>
+			<town> Boac </town>
+			<city> Marinduque </city>
+			<zip> 4900 </zip>
+		</address>
+	</instructor-details>
 
 </google-classroom>
