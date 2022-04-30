@@ -1,58 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE google-classroom [
-	<!ELEMENT google-classroom (subject, instructor)>
+	<!ELEMENT google-classroom (classes, enrolled)>
+	<!ELEMENT classes (subject, instructor, to-do, email-add)
 
 	<!ELEMENT subject (#PCDATA)>
 	<!ELEMENT instructor (#PCDATA)>
+	<!ELEMENT to-do (#PCDATA)>
+	<!ELEMENT email-add (#PCDATA)>
 
+	<!ATTLIST subject section CDATA #REQUIRED>
 	<!ATTLIST instructor gender CDATA #REQUIRED>
+	<!ATTLIST subject semester CDATA #REQUIRED>
 
 ]>
+//note for sir... all emails are made up, di ko alam po eh haha
 <google-classroom>
 	<classes>
-		<subject> Team Sports </subject>
+		<subject section="BSIT-2B"> Team Sports </subject>
 		<instructor gender="male"> Mr. Tuliao </instructor>
+		<email-add> mr_tuliao@gmail.com </email-add> 
+		<to-do> Basics of Volleyball - video performance </to-do>
 	</classes>
 	<classes>
-		<subject> Quantitative Math </subject>
+		<subject section="BSIT-2B"> Quantitative Math </subject>
 		<instructor gender="female"> Ms. Aguiflor </instructor>
+		<email-add> aguiflor09@gmail.com </email-add>
+		<to-do> Exercise 3.1.1 </to-do>
 	</classes>
 	<classes>
-		<subject> Computer Graphics Programming </subject>
+		<subject section="BSIT-2B"> Computer Graphics Programming </subject>
 		<instructor gender="male"> Mr. Salvacion </instructor>
+		<email-add> harris_s@gmail.com </email-add>
+		<to-do> Simple 2D Game Development in C# </to-do>
 	</classes>
 	<classes>
-		<subject> Application Development </subject>
+		<subject section="BSIT-2B"> Application Development </subject>
 		<instructor gender="male"> Mr. Villaruel </instructor>
+		<email-add> vill_05@gmail.com </email-add>
+		<to-do> Worksheet 4-2 </to-do>
 	</classes>
 	<classes>
-		<subject> Integrative Programming </subject>
+		<subject section="BSIT-2B"> Integrative Programming </subject>
 		<instructor gender="male"> Mr. Perez </instructor>
+		<email-add> ryan_clifford@gmail.com </email-add>
+		<to-do> Dataset to xml </to-do>
 	</classes>
 	<classes>
-		<subject> Data Structure Algorithm </subject>
+		<subject section="BSIT-2B"> Data Structure Algorithm </subject>
 		<instructor gender="male"> Mr. Imperio </instructor>
+		<email-add> imperio_908@gmail.com </email-add>
+		<to-do> Graph-Quiz </to-do>
 	</classes>
 	<classes>
-		<subject> Social and Professional Issues </subject>
+		<subject section="BSIT-2B"> Social and Professional Issues </subject>
 		<instructor gender="male"> Mr. Rebistual </instructor>
+		<email-add> c_reb@gmail.com </email-add>
+		<to-do> Reporting </to-do>
 	</classes>
 	<classes>
-		<subject> Discrete Mathematics </subject>
+		<subject section="BSIT-2B"> Discrete Mathematics </subject>
 		<instructor gender="male"> Mr. Moldon </instructor>
+		<email-add> moldon211@gmail.com </email-add>
+		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
 	<classes>
-		<subject> Life and Works of Rizal </subject>
+		<subject section="BSIT-2B"> Life and Works of Rizal </subject>
 		<instructor gender="male"> Mr. Quindoza </instructor>
+		<email-add> quin_888@gmail.com </email-add>
+		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
 	<classes>
-		<subject> Networking </subject>
+		<subject section="BSIT-2B"> Networking </subject>
 		<instructor gender="male"> Mr. Dimagiba </instructor>
+		<email-add> mr_unbreakable@gmail.com </email-add>
+		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
 	<classes>
-		<subject> Computer Programming </subject>
+		<subject section="BSIT-2B"> Computer Programming </subject>
 		<instructor gender="male"> Mr. Malinao </instructor>
+		<email-add> clear_ronjie@gmail.com </email-add>
+		<to-do> Woohoo! No work due soon. </to-do>
 	</classes>
+
+	<enrolled>
+		<subject semester="2nd"> Team Sports </subject>
+		<subject semester="2nd"> Quantitative Math </subject>
+		<subject semester="2nd"> Computer Graphics Programming </subject>
+		<subject semester="2nd"> Application Development </subject>
+		<subject semester="2nd"> Integrative Programming </subject>
+		<subject semester="2nd"> Data Structure Algorithm </subject>
+		<subject semester="2nd"> Social and Professional Issues </subject>
+		<subject semester="1st"> Discrete Mathematics </subject>
+		<subject semester="1st"> Life and Works of Rizal </subject>
+		<subject semester="1st"> Networking </subject>
+		<subject semester="1st"> Computer Programming </subject>
+	</enrolled>
 
 </google-classroom>
