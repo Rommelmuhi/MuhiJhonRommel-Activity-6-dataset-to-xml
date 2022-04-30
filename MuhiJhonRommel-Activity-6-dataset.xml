@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE google-classroom [
+	<!ELEMENT google-classroom (subject, instructor)>
+
+	<!ELEMENT subject (#PCDATA)>
+	<!ELEMENT instructor (#PCDATA)>
+
+	<!ATTLIST instructor gender CDATA #REQUIRED>
+
+]>
+<google-classroom>
+	<classes>
+		<subject> Team Sports </subject>
+		<instructor gender="male"> Mr. Tuliao </instructor>
+	</classes>
+	<classes>
+		<subject> Quantitative Math </subject>
+		<instructor gender="female"> Ms. Aguiflor </instructor>
+	</classes>
+	<classes>
+		<subject> Computer Graphics Programming </subject>
+		<instructor gender="male"> Mr. Salvacion </instructor>
+	</classes>
+	<classes>
+		<subject> Application Development </subject>
+		<instructor gender="male"> Mr. Villaruel </instructor>
+	</classes>
+	<classes>
+		<subject> Integrative Programming </subject>
+		<instructor gender="male"> Mr. Perez </instructor>
+	</classes>
+	<classes>
+		<subject> Data Structure Algorithm </subject>
+		<instructor gender="male"> Mr. Imperio </instructor>
+	</classes>
+	<classes>
+		<subject> Social and Professional Issues </subject>
+		<instructor gender="male"> Mr. Rebistual </instructor>
+	</classes>
+	<classes>
+		<subject> Discrete Mathematics </subject>
+		<instructor gender="male"> Mr. Moldon </instructor>
+	</classes>
+	<classes>
+		<subject> Life and Works of Rizal </subject>
+		<instructor gender="male"> Mr. Quindoza </instructor>
+	</classes>
+	<classes>
+		<subject> Networking </subject>
+		<instructor gender="male"> Mr. Dimagiba </instructor>
+	</classes>
+	<classes>
+		<subject> Computer Programming </subject>
+		<instructor gender="male"> Mr. Malinao </instructor>
+	</classes>
+
+</google-classroom>
